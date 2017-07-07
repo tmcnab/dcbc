@@ -33,6 +33,7 @@ const Page = ({ children, stylesheet, title, _locals }) =>
             <footer>
                 <p>
                     <a href="https://github.com/tmcnab/dckb/">Source code</a> licensed under <a href='https://opensource.org/AGPL-3.0'>AGPL-3.0</a>.
+                    There's an <a href="https://tmcnab.github.io/dckb">API</a> too.
                 </p>
             </footer>
         </body>
