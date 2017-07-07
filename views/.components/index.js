@@ -1,3 +1,4 @@
 module.exports = {
-    Page: require('./Page')
+    Grid: require('./grid'),
+    Page: require('./page'),
 }

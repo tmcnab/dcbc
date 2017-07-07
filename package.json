@@ -13,6 +13,7 @@
     "multer": "^1.3.0",
     "node-sass-middleware": "0.9.8",
     "nodemon": "^1.11.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "sqlite": "^2.8.0"
@@ -25,8 +26,8 @@
   "name": "dckb",
   "private": true,
   "scripts": {
-      "lint": "eslint -c eslint.json .",
-      "lint-fix": "eslint -c eslint.json . --fix",
+    "lint": "eslint -c eslint.json .",
+    "lint-fix": "eslint -c eslint.json . --fix",
     "start": "nodemon"
   },
   "version": "0.0.1"

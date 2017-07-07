@@ -1,7 +1,7 @@
 const { Page } = require('./.components')
 const React = require('react')
 
-module.exports = () =>
-    <Page title='Error'>
+module.exports = ({_locals}) =>
+    <Page title='Error' _locals={_locals}>
         <p>Sorry about that.</p>
     </Page>
