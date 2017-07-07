@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+export NODE_ENV=production
+
+npm install -s
+npm start -s
+
+# TODO automagically pull down latest release from github and run it.
