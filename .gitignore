@@ -59,4 +59,3 @@ typings/
 
 # Custom ignores
 package-lock.json
-static/*css*
