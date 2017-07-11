@@ -1,6 +1,7 @@
-const {Page} = require('./.components')
+const {Page} = require('../.components')
 const {Column, Row} = require('milligrami')
 const React = require('react')
+
 
 const ActivityCard = ({ }) =>
     <div>

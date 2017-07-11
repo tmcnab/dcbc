@@ -4,7 +4,7 @@ const Navigation = require('./navigation')
 const React = require('react')
 
 
-const Page = ({ children, stylesheet, title, _locals }) =>
+const Page = ({_locals, children, query, stylesheet, title}) =>
     <html>
         <head>
             <meta charSet='utf-8' />
@@ -28,7 +28,7 @@ const Page = ({ children, stylesheet, title, _locals }) =>
                             </h1>
                         </Column>
                         <Column>
-                            <Navigation _locals={_locals} />
+                            <Navigation _locals={_locals} query={query} />
                         </Column>
                     </Row>
                 </Container>

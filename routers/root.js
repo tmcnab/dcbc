@@ -1,8 +1,17 @@
-const express = require('express')
-const router = express.Router()
+const {Router} = require('express')
 
-/* GET home page. */
-router.get('/', (req, res) =>
-    res.render('index', { title: 'Express' }))
 
-module.exports = router
+const router = module.exports = new Router()
+
+
+router.get('/', (req, res, next) => {
+    const {query} = req.query
+
+    if (query) {
+        // search db for terms
+        res.render('root/search', {query})
+    } else {
+        // get activity log items and latest/hottest items.
+        res.render('root/index', {})
+    }
+})
