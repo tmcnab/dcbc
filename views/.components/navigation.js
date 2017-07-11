@@ -4,7 +4,7 @@ const React = require('react')
 
 const AuthForm = ({_locals}) =>
     _locals.user ? null : (
-        <form action='/auth/challenge' method='post'>
+        <form action='/auth/challenge' className='inline mbz' method='post'>
             <input name='email' placeholder='user@domain.tld' required type='email' />
         </form>
     )
@@ -12,7 +12,7 @@ const AuthForm = ({_locals}) =>
 
 const SearchForm = ({_locals}) =>
     _locals.user ? (
-        <form action='/' method='get'>
+        <form action='/' className='inline mbz' method='get'>
             <input placeholder='search for things' required type='search' value={_locals.query} />
         </form>
     ) : null
