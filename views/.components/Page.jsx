@@ -19,7 +19,7 @@ const Page = ({_locals, children, query, stylesheet, title}) =>
             {stylesheet ? <link rel='stylesheet' href={stylesheet} /> : null}
         </head>
         <body>
-            <header className='bb'>
+            <header className='bb mbs'>
                 <Container>
                     <Row>
                         <Column>
