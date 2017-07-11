@@ -15,7 +15,7 @@ const portier = new Portier({
 router.post('/challenge', (req, res, next) =>
     portier.authenticate(req.body.email, (error, url) =>
         error ? next(error) : res.redirect(303, url)
-))
+    ))
 
 router.post('/verify', (req, res, next) =>
     portier.verify(req.body.id_token, (error, email) => {
