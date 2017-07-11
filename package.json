@@ -10,6 +10,7 @@
     "express-lembro": "^1.1.0",
     "express-react-views": "^0.10.2",
     "express-session": "^1.15.3",
+    "http-errors": "^1.6.1",
     "lodash": "^4.17.4",
     "milligrami": "^0.2.3-0",
     "morgan": "~1.8.1",
