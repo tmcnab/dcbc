@@ -1,3 +1,4 @@
+const auth = require('./auth')
 const root = require('./root')
 
 
@@ -23,6 +24,7 @@ function errorHandler (err, req, res, next) {
 
 
 module.exports = (app) =>
-    app.use(root)
-        .use(notFound)
-        .use(errorHandler)
+    app.use('/', root)
+       .use('/auth', auth)
+       .use(notFound)
+       .use(errorHandler)
