@@ -1,5 +1,6 @@
 const {DEBUG} = require('../lib/constants')
 const auth = require('./auth')
+const book = require('./book')
 const createError = require('http-errors')
 const root = require('./root')
 
@@ -16,5 +17,6 @@ const errorHandler = (error, req, res, next) =>                                 
 module.exports = (app) =>
     app.use('/', root)
         .use('/auth', auth)
+        .use('/book[s]', book)
         .use(notFound)
         .use(errorHandler)

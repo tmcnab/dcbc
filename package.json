@@ -15,6 +15,7 @@
     "milligrami": "^0.2.3-0",
     "morgan": "~1.8.1",
     "multer": "^1.3.0",
+    "nedb": "^1.8.0",
     "nodemon": "^1.11.0",
     "portier": "^0.3.0",
     "prop-types": "^15.5.10",
